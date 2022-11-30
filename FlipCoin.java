@@ -16,8 +16,8 @@ public class FlipCoin {
 				headcount++;
 		  }
 		}
-		int headPercentage=(tailcount / coinFlipped) * 100;
-	    int tailPercentage=(headcount / coinFlipped) * 100;
+		int headPercentage=headcount * 100 / coinFlipped;
+	    int tailPercentage=tailcount *100/ coinFlipped;
        System.out.println("Percentage of Head :"+headPercentage);
        System.out.println("Percentage of tail : "+tailPercentage);
 	}
